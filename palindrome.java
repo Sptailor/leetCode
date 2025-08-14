@@ -1,4 +1,6 @@
+//by Suhail Tailor
 // LeetCode: Valid Palindrome
+
 // This solution uses two pointers starting from the beginning and end of the string.
 // It skips non-alphanumeric characters and compares characters case-insensitively.
 // If any mismatch is found, it returns false; otherwise, true when pointers cross.

@@ -1,3 +1,5 @@
+
+//by Suhail Tailor
 // LeetCode: Best Time to Buy and Sell Stock
 // This solution tracks the lowest stock price seen so far (minPrice) while iterating through the array.
 // At each price, it calculates the potential profit if sold today and updates maxProfit if this profit is higher.
