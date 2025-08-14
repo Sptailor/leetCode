@@ -1,4 +1,5 @@
 
+//by Suhail Tailor
 // LeetCode: Two Sum
 // This solution uses a HashMap to store visited numbers and their indices.
 // For each number, it calculates the complement (target - current number)
