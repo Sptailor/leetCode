@@ -1,4 +1,5 @@
 /**
+ * by Suhail Tailor
  * Solution to determine if two strings are anagrams.
  * Uses two HashMaps to count character frequencies and compares them.
  * Returns true if both strings have identical character counts, false otherwise.
