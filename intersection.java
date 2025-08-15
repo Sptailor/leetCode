@@ -20,23 +20,17 @@ class Solution {
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        if (map1.size() > map2.size()) {
-
-            for (int key : map2) {
-                if (map1.contains(key)) {
-                    list.add(key);
-
-                }
-            }
-        } else {
-            for (int key : map1) {
-                if (map2.contains(key)) {
-                    list.add(key);
-
-                }
-            }
-
+         if (map1.size() > map2.size()) {
+            HashSet<Integer> temp = map1;
+            map1 = map2;
+            map2 = temp;
         }
+        for (int key : map1) {
+            if (map2.contains(key)) {
+                list.add(key);
+            }
+        }
+
 
         int[] result = list.stream().mapToInt(Integer::intValue).toArray();
         return result;
