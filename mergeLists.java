@@ -1,3 +1,4 @@
+//By Suhail Tailor
 
 //Merge two linked lists.
 //Uses a temp node to store list and tail pointer to track final node.
