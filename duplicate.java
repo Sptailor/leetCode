@@ -1,4 +1,6 @@
+//By suhail Tailor
 // Checks if an array contains any duplicate elements using a HashSet.
+
 // Returns true upon finding a duplicate, otherwise false.
 // Runs in O(n) time and O(n) space.
 

@@ -1,4 +1,5 @@
 
+//By Suhail Tailor
 // Adds two numbers represented by linked lists (digits stored in reverse order).
 // Iterates through both lists, summing digits with carry, and builds a new list for the result.
 
