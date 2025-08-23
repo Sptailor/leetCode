@@ -1,4 +1,5 @@
 
+//Suhail Tailor
 // Sliding window approach:
 // Expand the window by moving `right` and count characters in a HashMap.
 // Track the frequency of the most common character in the window (`maxCount`).
