@@ -1,4 +1,4 @@
-
+//By Suhail Tailor
 // Recursively reverses a singly linked list.
 // Base case: if the list is empty or has one node, return head.
 // Recursive step: reverse the rest of the list, then make head.next point back to head.
