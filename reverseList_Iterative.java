@@ -1,4 +1,5 @@
 
+//By Suhail Tailor
 // Reverses a singly linked list by iteratively re-pointing each node's next reference.
 // Uses three pointers: prev (initially null), curr (traverses the list), and next (stores the next node).
 // At each step, reverses the link so curr points to prev, then advances both prev and curr forward.
