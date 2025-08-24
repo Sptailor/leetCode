@@ -1,3 +1,4 @@
+//Suhail Tailor
 // Recursively checks if two binary trees are the same by comparing node values 
 // and ensuring both left and right subtrees are identical in structure and content.
 /**
