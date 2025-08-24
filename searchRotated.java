@@ -1,4 +1,5 @@
 
+//Suhail Tailor
 // This solution performs a modified binary search on a rotated sorted array.
 // At each step, we determine which half (left or right) is sorted, then check 
 // if the target lies within that half. If it does, we adjust the search bounds 
