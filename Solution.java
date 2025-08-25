@@ -1,4 +1,4 @@
-
+//Suhail Tailor
 // Detects if a linked list has a cycle using a HashSet.
 // Iterates through each node and stores it in the set.
 // If a node is seen again, a cycle exists and returns true.
