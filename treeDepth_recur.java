@@ -1,3 +1,4 @@
+//Suhail Tailor
 // Recursively computes the maximum depth of a binary tree.
 // Base case: return 0 if the node is null.
 // Otherwise, find the max depth of the left and right subtrees
