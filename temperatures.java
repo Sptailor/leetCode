@@ -8,6 +8,7 @@ public class temperatures {
 // at the index on top of the stack, we pop that index and calculate how many days it took to find
 // a warmer temperature (currentIndex - prevIndex). Each index is pushed and popped at most once,
 // ensuring linear time complexity.
+//Suhail Tailor
 
 
 
