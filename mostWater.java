@@ -1,4 +1,4 @@
-
+//Suhail Tailor
 // Finds the maximum water container area in an array of heights.
 // Uses the two-pointer approach, starting at both ends of the array.
 // Moves the pointer with the smaller height inward each step.
