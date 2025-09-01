@@ -1,4 +1,4 @@
-
+//Suhail Tailor
 // Counts the frequency of each element using a HashMap.
 // Finds and returns the element that appears more than n/2 times.
 // Runs in O(n) time and O(n) space.
