@@ -1,4 +1,4 @@
-
+//Suhail Tailor
 /**
  * Uses a HashSet to find the longest streak of consecutive numbers.
  * Only starts counting when a number is the beginning of a sequence,
