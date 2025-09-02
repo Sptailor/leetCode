@@ -16,7 +16,7 @@
  *     }
  * }
  */
-public class Solution {
+public class hasCycle_twoPtr {
     public boolean hasCycle(ListNode head) {
         ListNode slow=head;
         ListNode fast=head;

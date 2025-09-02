@@ -4,6 +4,8 @@
 //loops over smaller map
 //converts arrayList to array
 
+import java.util.ArrayList;
+import java.util.HashSet;
 
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
