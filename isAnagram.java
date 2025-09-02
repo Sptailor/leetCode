@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 /**
  * by Suhail Tailor
  * Solution to determine if two strings are anagrams.
