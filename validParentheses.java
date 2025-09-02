@@ -6,7 +6,7 @@
 // If it matches, we pop it; otherwise the string is invalid.
 // At the end, the stack must be empty for the string to be valid.
 
-
+import java.util.Stack;
 
 class Solution {
     public boolean isValid(String s) {

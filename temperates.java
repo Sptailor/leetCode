@@ -6,6 +6,8 @@
 // a warmer temperature (currentIndex - prevIndex). Each index is pushed and popped at most once,
 // ensuring linear time complexity.
 
+import java.util.Stack;
+
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
        

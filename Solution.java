@@ -4,6 +4,8 @@
 // If a node is seen again, a cycle exists and returns true.
 // Returns false if the end of the list is reached without repeats.
 
+import java.util.HashSet;
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
