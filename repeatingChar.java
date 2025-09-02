@@ -7,6 +7,8 @@
 // shrink from the left until it's valid again.
 // Keep track of the maximum valid window length (`maxLen`) and return it.
 
+import java.util.HashMap;
+
 class Solution {
     public int characterReplacement(String s, int k) {
 
