@@ -4,6 +4,7 @@
 // Finds the index of the first non-repeating character in a string.
 // Uses a HashMap to count character frequencies, then returns the first index with count == 1.
 
+import java.util.HashMap;
 
 class Solution {
     public int firstUniqChar(String s) {
