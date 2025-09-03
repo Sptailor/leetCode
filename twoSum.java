@@ -7,6 +7,8 @@
 // pair of indices; otherwise, stores the current number in the map.
 // Time Complexity: O(n), Space Complexity: O(n).
 
+import java.util.HashMap;
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap <Integer,Integer> map=new HashMap<>();      
