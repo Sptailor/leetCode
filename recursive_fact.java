@@ -1,5 +1,5 @@
 
-//Initial file
+//Suhail Tailor
 public class recursive_fact {
 
     // Method to calculate factorial using recursion
