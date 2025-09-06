@@ -1,5 +1,9 @@
 
-//Suhail Tailor
+// Suhail Tailor
+// This program calculates the factorial of a number using recursion.
+// The factorial method repeatedly calls itself with (n-1) until it reaches the base case (0 or 1),
+// then multiplies the results back up to get the final factorial value.
+
 public class recursive_fact {
 
     // Method to calculate factorial using recursion
