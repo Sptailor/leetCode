@@ -1,4 +1,7 @@
 
+// By Suhail Tailor
+// This program converts a given string into snake_case format.
+
 public class snakeCase {
 
     public static String toSnakeCase(String input) {
