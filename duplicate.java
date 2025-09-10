@@ -1,6 +1,6 @@
 //By suhail Tailor
-// Checks if an array contains any duplicate elements using a HashSet.
 
+// Checks if an array contains any duplicate elements using a HashSet.
 // Returns true upon finding a duplicate, otherwise false.
 // Runs in O(n) time and O(n) space.
 
@@ -16,7 +16,7 @@ class Solution {
             if(set.contains(num)){
 
                 return true;
-                
+
             }
 
             set.add(num);
