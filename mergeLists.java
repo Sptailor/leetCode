@@ -1,5 +1,4 @@
 //By Suhail Tailor
-
 //Merge two linked lists.
 //Uses a temp node to store list and tail pointer to track final node.
 //Compares each list value and adds smaller value to merged list
@@ -46,7 +45,7 @@ class Solution {
         }else{
 
             tail.next=list1;
-            
+
         }
 
         return temp.next;

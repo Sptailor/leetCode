@@ -1,4 +1,4 @@
-
+//By Suhail Tailor
 // Checks if a string can become a palindrome by removing at most one character.
 // Uses two pointers from both ends to compare characters.
 // On a mismatch, tries skipping either the left or right character and checks if the rest is a palindrome.
