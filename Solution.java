@@ -20,7 +20,7 @@ import java.util.HashSet;
 public class Solution {
     public boolean hasCycle(ListNode head) {
 
-        HashSet<ListNode>set=new HashSet();
+        HashSet<ListNode>set=new HashSet<>();
         
         while(head!=null){
 
@@ -32,7 +32,7 @@ public class Solution {
             }else{
 
                 return true;
-                
+
             }
 
         }
