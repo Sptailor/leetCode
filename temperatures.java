@@ -14,18 +14,18 @@ public class temperatures {
 
     public int[] dailyTemperatures(int[] temperatures) {
 
-       Stack<Integer> stack = new Stack<>();
-       int[] result = new int[temperatures.length];
+       Stack<Integer> stack = new Stack<>();// stack to store indices of temperatures
+       int[] result = new int[temperatures.length];// result array initialized to 0 by default
 
-       for(int i=0;i<temperatures.length;i++){
-        while(!stack.isEmpty()&& temperatures[i] > temperatures[stack.peek()] ){
-             int prevIndex = stack.pop();
-             result[prevIndex] = i - prevIndex;
+       for(int i=0;i<temperatures.length;i++){// iterate through each temperature
+        while(!stack.isEmpty()&& temperatures[i] > temperatures[stack.peek()] ){// check for warmer temperature
+             int prevIndex = stack.pop();// pop the index from stack
+             result[prevIndex] = i - prevIndex;// calculate the number of days to wait
         }
-        stack.push(i);
+        stack.push(i);// push current index onto stack
 
        }
-       return result;
+       return result;// return the result array
 
         
     }
