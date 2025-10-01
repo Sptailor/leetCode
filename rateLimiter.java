@@ -20,6 +20,11 @@ public class rateLimiter {
     }
 
     public synchronized boolean isAllowed(int userId, int timestamp) {
+        // Clean up expired entries for memory efficiency
+        userRequests.entrySet().removeIf(entry ->
+            timestamp >= entry.getValue().windowStart + windowSize
+        );
+
         UserRequestInfo info = userRequests.get(userId);
 
         if (info == null) {
