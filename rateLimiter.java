@@ -3,52 +3,59 @@ import java.util.Map;
 
 public class rateLimiter {
 
-    private final int limit;        // max requests allowed
-    private final int windowSize;   // window size in seconds
+    // Configuration
+    private final int maxRequests;    // How many requests allowed per window
+    private final int windowSeconds;  // Time window in seconds
 
-    // Store request info per user
-    private static class UserRequestInfo {
-        int count;
-        int windowStart;
+    // Track each user's request count and when their window started
+    private final Map<Integer, Integer> requestCount = new HashMap<>();
+    private final Map<Integer, Integer> windowStartTime = new HashMap<>();
+
+    public rateLimiter(int maxRequests, int windowSeconds) {
+        this.maxRequests = maxRequests;
+        this.windowSeconds = windowSeconds;
     }
 
-    private final Map<Integer, UserRequestInfo> userRequests = new HashMap<>();
+    public synchronized boolean isAllowed(int userId, int currentTime) {
+        // Step 1: Clean up old users whose windows have expired
+        cleanupExpiredUsers(currentTime);
 
-    public rateLimiter(int limit, int windowSize) {
-        this.limit = limit;
-        this.windowSize = windowSize;
-    }
-
-    public synchronized boolean isAllowed(int userId, int timestamp) {
-        // Clean up expired entries for memory efficiency
-        userRequests.entrySet().removeIf(entry ->
-            timestamp >= entry.getValue().windowStart + windowSize
-        );
-
-        UserRequestInfo info = userRequests.get(userId);
-
-        if (info == null) {
-            // First request from this user
-            info = new UserRequestInfo();
-            info.count = 1;
-            info.windowStart = timestamp;
-            userRequests.put(userId, info);
-            return true;
+        // Step 2: Check if this is a new user
+        if (!requestCount.containsKey(userId)) {
+            requestCount.put(userId, 1);
+            windowStartTime.put(userId, currentTime);
+            return true;  // First request always allowed
         }
 
-        // Check if we are still in the same window
-        if (timestamp < info.windowStart + windowSize) {
-            if (info.count < limit) {
-                info.count++;
-                return true;
+        // Step 3: Get user's current window info
+        int userWindowStart = windowStartTime.get(userId);
+        int userCount = requestCount.get(userId);
+
+        // Step 4: Check if still in the same time window
+        boolean inSameWindow = currentTime < userWindowStart + windowSeconds;
+
+        if (inSameWindow) {
+            // Still in same window - check if under limit
+            if (userCount < maxRequests) {
+                requestCount.put(userId, userCount + 1);
+                return true;  // Request allowed
             } else {
-                return false; // limit exceeded
+                return false;  // Limit reached - reject request
             }
         } else {
-            // Window has expired, reset counter
-            info.count = 1;
-            info.windowStart = timestamp;
-            return true;
+            // Window expired - start a new window
+            requestCount.put(userId, 1);
+            windowStartTime.put(userId, currentTime);
+            return true;  // Request allowed in new window
         }
+    }
+
+    private void cleanupExpiredUsers(int currentTime) {
+        // Remove users whose windows have completely passed
+        windowStartTime.entrySet().removeIf(entry ->
+            currentTime >= entry.getValue() + windowSeconds
+        );
+        // Also remove their counts
+        requestCount.keySet().retainAll(windowStartTime.keySet());
     }
 }
