@@ -1,4 +1,4 @@
-
+//By Suhail Tailor
  /**
      * Checks if a binary tree is a valid BST using inorder traversal.
      * Inorder traversal of a BST should produce a strictly increasing sequence.
