@@ -1,9 +1,9 @@
-
-
-// Detects if a linked list has a cycle using two pointers (Floyd’s algorithm).
-// Slow pointer moves one step at a time, fast pointer moves two steps.
-// If the list has a cycle, the fast pointer will eventually meet the slow pointer.
-// Returns false if the fast pointer reaches the end of the list (no cycle).
+/** By Suhail Tailor
+ * Detects if a linked list has a cycle using two pointers (Floyd’s algorithm).
+ * Slow pointer moves one step at a time, fast pointer moves two steps.
+ * If the list has a cycle, the fast pointer will eventually meet the slow pointer.
+ * Returns false if the fast pointer reaches the end of the list (no cycle).
+ */
 
 /**
  * Definition for singly-linked list.
