@@ -1,4 +1,5 @@
-
+//Suhail Tailor
+// Problem: Daily Temperatures
 // This solution uses a monotonic stack to solve the "Daily Temperatures" problem in O(n) time.
 // We maintain a stack of indices where temperatures are not yet resolved (waiting for a warmer day).
 // As we iterate through the array, whenever the current temperature is warmer than the temperature
