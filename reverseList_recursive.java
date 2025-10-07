@@ -19,9 +19,9 @@ class Solution {
     public ListNode reverseList(ListNode head) {
         if(head==null||head.next==null)return head;
         
-          ListNode newHead = reverseList(head.next);
-          head.next.next = head;
-          head.next = null;
+          ListNode newHead = reverseList(head.next);// Reverse the rest of the list
+          head.next.next = head;// Make the next node point to the current head
+          head.next = null;// Set head.next to null to avoid cycles
 
     return newHead;
 
