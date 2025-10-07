@@ -12,16 +12,16 @@ class Solution {
         int right=s.length()-1;
 
         while(left<=right){
-            char leftChar=s.charAt(left);
-             char rightChar=s.charAt(right);
+            char leftChar=s.charAt(left);// Get character at left pointer
+             char rightChar=s.charAt(right);// Get character at right pointer
 
-             if(!Character.isLetterOrDigit(leftChar)){
-                left++;
+             if(!Character.isLetterOrDigit(leftChar)){// Skip non-alphanumeric characters on the left
+                left++;// Move left pointer to the right
                 continue;
 
              }
-             else if(!Character.isLetterOrDigit(rightChar)){
-                right--;
+             else if(!Character.isLetterOrDigit(rightChar)){// Skip non-alphanumeric characters on the right
+                right--;// Move right pointer to the left
                 continue;
 
              }
