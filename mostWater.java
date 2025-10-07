@@ -25,7 +25,7 @@ class Solution {
            }
            maxArea=Math.max(maxArea,currArea);// Update maxArea if the current area is larger
         }
-        return maxArea;
+        return maxArea;// Return the maximum area found
 
     }
 }
