@@ -12,28 +12,28 @@
 class Solution {
     private class ListNode {
     int val;
-    ListNode next;
+    ListNode next;// Pointer to the next node
     ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    ListNode(int val) { this.val = val; }// Constructor to initialize the node with a value
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }// Constructor to initialize the node with a value and a reference to the next node
 }
     public ListNode reverseList(ListNode head) {
         
-        ListNode prev= null;
-        ListNode curr=head;
+        ListNode prev= null;// Previous node starts as null
+        ListNode curr=head;// Current node starts at the head of the list
 
         while(curr!=null){
 
-            ListNode next=curr.next;
+            ListNode next=curr.next;// Store the next node
 
-            curr.next=prev;
-            prev=curr;
-            curr=next;
+            curr.next=prev;// Reverse the link
+            prev=curr;// Move prev to current
+            curr=next;// Move curr to next
 
         }
 
-        head=prev;
+        head=prev;// New head is the previous node (new front of the reversed list)
 
-        return head;
+        return head;// Return the new head of the reversed list
     }
 }
