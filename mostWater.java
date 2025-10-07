@@ -16,14 +16,14 @@ class Solution {
             int currArea=0;// Variable to store the current area
 
            if(leftBar>rightBar){// Move the right pointer if the right bar is shorter
-            currArea=rightBar *(right-left);
+            currArea=rightBar *(right-left);// Calculate area using the shorter bar
             right--;
 
            }else{
-             currArea=leftBar *(right-left);
+             currArea=leftBar *(right-left);// Calculate area using the shorter bar
              left++;
            }
-           maxArea=Math.max(maxArea,currArea);
+           maxArea=Math.max(maxArea,currArea);// Update maxArea if the current area is larger
         }
         return maxArea;
 
