@@ -25,12 +25,12 @@ class Solution {
                 continue;
 
              }
-             if(Character.toLowerCase(leftChar)!=Character.toLowerCase(rightChar)){
-               return false;
+             if(Character.toLowerCase(leftChar)!=Character.toLowerCase(rightChar)){// Compare characters case-insensitively
+               return false;// Return false if they don't match
 
              }
-            left++;
-            right--;
+            left++;// Move left pointer to the right
+            right--;// Move right pointer to the left
 
         } return true;
     }
