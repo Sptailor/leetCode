@@ -18,15 +18,15 @@ class Solution {
             right--;// Move right pointer to the left
 
         }
-        return true;
+        return true;// Return true if the entire string is a palindrome
 
     }
-    public boolean isPalindrome(int left, int right, String s){
+    public boolean isPalindrome(int left, int right, String s){// Helper function to check if a substring is a palindrome
     
-        while(left<right){
-        char leftChar=s.charAt(left);
-        char rightChar=s.charAt(right);
-            if(leftChar!=rightChar){
+        while(left<right){// Compare characters from both ends of the substring
+        char leftChar=s.charAt(left);// Get character at left pointer
+        char rightChar=s.charAt(right);// Get character at right pointer
+            if(leftChar!=rightChar){// If characters don't match, it's not a palindrome
                 return false;
             }
             else{
