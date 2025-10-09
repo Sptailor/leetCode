@@ -27,11 +27,11 @@ class Solution {
         char leftChar=s.charAt(left);// Get character at left pointer
         char rightChar=s.charAt(right);// Get character at right pointer
             if(leftChar!=rightChar){// If characters don't match, it's not a palindrome
-                return false;
+                return false;// Return false if a mismatch is found
             }
             else{
-                left++;
-                right--;
+                left++;// Move left pointer to the right
+                right--;// Move right pointer to the left
             }
         }
         return true;
