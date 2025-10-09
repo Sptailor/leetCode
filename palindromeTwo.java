@@ -6,16 +6,16 @@
 
 class Solution {
     public boolean validPalindrome(String s) {
-        int left=0;
-        int right=s.length()-1;
-        
+        int left=0;// Left pointer starts at the beginning of the string
+        int right=s.length()-1;// Right pointer starts at the end of the string
+
         while(left<right){
-            if(s.charAt(left)!= s.charAt(right)){
+            if(s.charAt(left)!= s.charAt(right)){// On mismatch, try skipping either character
               
-                return isPalindrome( left + 1, right,s) || isPalindrome(left, right - 1,s);
+                return isPalindrome( left + 1, right,s) || isPalindrome(left, right - 1,s);// Check if skipping left or right character results in a palindrome
             }
-            left++;
-            right--;
+            left++;// Move left pointer to the right
+            right--;// Move right pointer to the left
 
         }
         return true;
