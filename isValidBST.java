@@ -33,9 +33,9 @@ class Solution {
 
         if(prev!=null &&root.val<=prev.val)return false;// Current node must be greater than previous node
 
-        prev=root;
+        prev=root;// Update previous node to current node   
 
-        return isValidBST(root.right);
+        return isValidBST(root.right);// Recursively check the right subtree
     
     }
 }
