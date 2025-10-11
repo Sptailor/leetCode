@@ -25,11 +25,13 @@ class Solution {
     private TreeNode prev=null;
     public boolean isValidBST(TreeNode root) {
 
-        if(root==null)return true;
+        if(root==null)return true;// An empty tree is a valid BST
 
-        if(!isValidBST(root.left)) return false;
+        if(!isValidBST(root.left)) return false;        // Recursively check the left subtree
 
-        if(prev!=null &&root.val<=prev.val)return false;
+         // Check current node value with the previous node value
+
+        if(prev!=null &&root.val<=prev.val)return false;// Current node must be greater than previous node
 
         prev=root;
 

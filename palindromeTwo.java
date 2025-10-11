@@ -34,7 +34,7 @@ class Solution {
                 right--;// Move right pointer to the left
             }
         }
-        return true;
+        return true;// Return true if the substring is a palindrome
 
     }
 }
