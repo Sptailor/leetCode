@@ -29,12 +29,12 @@ class Solution {
         }
         for (int key : map1) {//loop over smaller map
             if (map2.contains(key)) {
-                list.add(key);
+                list.add(key);//add to list if key exists in both maps
             }
         }
 
 
         int[] result = list.stream().mapToInt(Integer::intValue).toArray();//convert arrayList to arrays
-        return result;
+        return result;//return result array
     }
 }
