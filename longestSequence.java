@@ -16,11 +16,11 @@ class Solution {
         for(int num:nums){//populate set with unique numbers
             set.add(num);//add to set
         }
-        for(int num: set){
-            if(!set.contains(num-1)){
+        for(int num: set){//loop over set
+            if(!set.contains(num-1)){//only start counting if num is the start of a sequence
                 int curr=num;
                 int streak=1;
-                while(set.contains(curr+1)){
+                while(set.contains(curr+1)){//expand forward to count length of sequence
                     streak++;
                     curr++;
                 }
