@@ -11,10 +11,10 @@ import java.util.HashSet;
 
 class Solution {
     public int longestConsecutive(int[] nums) {
-        HashSet<Integer>set=new HashSet();
-        int longest=0;
-        for(int num:nums){
-            set.add(num);
+        HashSet<Integer>set=new HashSet();//set to store unique numbers
+        int longest=0;//variable to track longest streak
+        for(int num:nums){//populate set with unique numbers
+            set.add(num);//add to set
         }
         for(int num: set){
             if(!set.contains(num-1)){
