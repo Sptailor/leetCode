@@ -15,16 +15,16 @@ class Solution {
         int maxProfit=0;
         for(int i=0;i<prices.length;i++){// Iterate through each price in the array
             if(minPrice>prices[i]){// Update minPrice if the current price is lower
-                minPrice=prices[i];
+                minPrice=prices[i];// Update minPrice to the new lower price
             }
 
-            potentialProfit=prices[i]-minPrice;
+            potentialProfit=prices[i]-minPrice;// Calculate potential profit if sold today
 
-            if(potentialProfit>maxProfit){
+            if(potentialProfit>maxProfit){// Update maxProfit if the potential profit is higher
 
-                maxProfit=potentialProfit;
+                maxProfit=potentialProfit;// Update maxProfit to the new higher profit
              }
         }
-        return maxProfit;
+        return maxProfit;// Return the maximum profit found
     }
 }
