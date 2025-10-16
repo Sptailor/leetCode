@@ -27,6 +27,6 @@ class Solution {
                 longest=Math.max(longest,streak);//update longest if current streak is longer
             }
         }
-        return longest;
+        return longest;// return longest streak found
     }
 }
