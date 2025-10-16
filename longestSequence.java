@@ -21,10 +21,10 @@ class Solution {
                 int curr=num;
                 int streak=1;
                 while(set.contains(curr+1)){//expand forward to count length of sequence
-                    streak++;
-                    curr++;
+                    streak++;//increment streak
+                    curr++;//increment current number
                 }
-                longest=Math.max(longest,streak);
+                longest=Math.max(longest,streak);//update longest if current streak is longer
             }
         }
         return longest;
