@@ -18,8 +18,8 @@
  */
 public class hasCycle_twoPtr {
     public boolean hasCycle(ListNode head) {
-        ListNode slow=head;
-        ListNode fast=head;
+        ListNode slow=head;// Slow pointer starts at head
+        ListNode fast=head;// Fast pointer starts at head
         while(fast!=null && fast.next!=null){
             
             slow=slow.next;
