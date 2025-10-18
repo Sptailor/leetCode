@@ -20,13 +20,13 @@ public class hasCycle_twoPtr {
     public boolean hasCycle(ListNode head) {
         ListNode slow=head;// Slow pointer starts at head
         ListNode fast=head;// Fast pointer starts at head
-        while(fast!=null && fast.next!=null){
+        while(fast!=null && fast.next!=null){// Continue until fast pointer reaches the end
             
-            slow=slow.next;
-            fast=fast.next.next;
+            slow=slow.next;// Move slow pointer by 1
+            fast=fast.next.next;// Move fast pointer by 2
 
-            if(fast == slow){
-                return true;
+            if(fast == slow){// If they meet, there is a cycle
+                return true;// Return true if a cycle is detected
             }
         }
         return false;
