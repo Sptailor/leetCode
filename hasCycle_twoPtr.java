@@ -29,6 +29,6 @@ public class hasCycle_twoPtr {
                 return true;// Return true if a cycle is detected
             }
         }
-        return false;
+        return false;// Return false if no cycle is found
     }
 }
