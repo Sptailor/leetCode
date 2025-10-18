@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 class Solution {
     public int majorityElement(int[] nums) {
-        int targetCount=nums.length/2;
+        int targetCount=nums.length/2;// Calculate the threshold for majority
 
         HashMap<Integer,Integer>map=new HashMap<>();
 
