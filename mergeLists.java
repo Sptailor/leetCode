@@ -44,7 +44,7 @@ class Solution {
 
         }else{
 
-            tail.next=list1;
+            tail.next=list1;// Append remaining nodes from list1
 
         }
 
