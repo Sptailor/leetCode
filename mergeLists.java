@@ -27,14 +27,14 @@ class Solution {
                 tail.next=list1;// Append smaller node to merged list
                 list1=list1.next;// Move to next node in list1
 
-            }else{
+            }else{// If list2's value is smaller or equal
 
-                tail.next=list2;
-                list2=list2.next;
+                tail.next=list2;// Append smaller node to merged list
+                list2=list2.next;// Move to next node in list2
 
             }
 
-            tail=tail.next;
+            tail=tail.next;// Move tail to the end of merged list
 
         }
 
