@@ -38,9 +38,9 @@ class Solution {
 
         }
 
-        if(list1==null){
+        if(list1==null){// If list1 is exhausted
 
-            tail.next=list2;
+            tail.next=list2;// Append remaining nodes from list2
 
         }else{
 
