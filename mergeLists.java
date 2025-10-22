@@ -20,12 +20,12 @@ class Solution {
         ListNode temp=new ListNode(-1);
         ListNode tail=temp;
         
-        while(list1!=null&&list2!=null){
+        while(list1!=null&&list2!=null){// While both lists have nodes
 
-            if(list1.val<list2.val){
+            if(list1.val<list2.val){// Compare values
 
-                tail.next=list1;
-                list1=list1.next;
+                tail.next=list1;// Append smaller node to merged list
+                list1=list1.next;// Move to next node in list1
 
             }else{
 
