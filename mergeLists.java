@@ -48,6 +48,6 @@ class Solution {
 
         }
 
-        return temp.next;
+        return temp.next;// Return head of merged list (skipping temp node)
     }
 }
