@@ -44,8 +44,8 @@ public class rateLimiter {
             }
         } else {
             // Window expired - start a new window
-            requestCount.put(userId, 1);
-            windowStartTime.put(userId, currentTime);
+            requestCount.put(userId, 1);// Reset count
+            windowStartTime.put(userId, currentTime);// Reset window start time
             return true;  // Request allowed in new window
         }
     }
