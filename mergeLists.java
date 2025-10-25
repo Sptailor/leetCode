@@ -42,7 +42,7 @@ class Solution {
 
             tail.next=list2;// Append remaining nodes from list2
 
-        }else{
+        }else{// If list2 is exhausted
 
             tail.next=list1;// Append remaining nodes from list1
 
