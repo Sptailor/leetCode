@@ -20,7 +20,7 @@
 class Solution {
     public TreeNode invertTree(TreeNode root) {
 
-        if(root == null)return root;//
+        if(root == null)return root;// Base case: if the node is null, return null
 
 
         TreeNode temp=root.left;//swap left and right children
