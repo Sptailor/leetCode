@@ -16,7 +16,7 @@ public class recursive_fact {
 
     public static void main(String[] args) {
         int number = 5;  // Example: factorial of 5
-        int result = factorial(number);
-        System.out.println("Factorial of " + number + " is: " + result);
+        int result = factorial(number);// Call factorial method
+        System.out.println("Factorial of " + number + " is: " + result);/// Print the result
     }
 }
