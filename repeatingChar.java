@@ -12,12 +12,12 @@ import java.util.HashMap;
 class Solution {
     public int characterReplacement(String s, int k) {
 
-        HashMap<Character,Integer>map=new HashMap<>();
+        HashMap<Character,Integer>map=new HashMap<>();//map to store char counts
 
     
-        int left=0;
-        int maxCount=0;
-        int maxLen=0;
+        int left=0;//left pointer
+        int maxCount=0;//max frequency of a single char in current window
+        int maxLen=0;//max length of valid window
 
 
           for(int right=0;right<s.length();right++){
