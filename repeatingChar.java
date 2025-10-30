@@ -22,9 +22,9 @@ class Solution {
 
           for(int right=0;right<s.length();right++){
 
-            char c=s.charAt(right);
+            char c=s.charAt(right);//current char at right pointer
              map.put(c, map.getOrDefault(c, 0) + 1);
-              maxCount = Math.max(maxCount, map.get(c));
+              maxCount = Math.max(maxCount, map.get(c));//update maxCount
 
           while ((right - left + 1) - maxCount > k) {
                 char leftChar = s.charAt(left);
