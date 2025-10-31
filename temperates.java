@@ -12,8 +12,8 @@ import java.util.Stack;
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
        
-       Stack<Integer>stack=new Stack();
-       int[] result = new int[temperatures.length];
+       Stack<Integer>stack=new Stack();//monotonic stack to store indices of temperatures
+       int[] result = new int[temperatures.length];//result array to store days until warmer temperature
 
        for(int i=0;i<temperatures.length;i++){
         while(!stack.isEmpty()&& temperatures[i] > temperatures[stack.peek()] ){
