@@ -30,10 +30,10 @@ class Solution {
           while ((right - left + 1) - maxCount > k) {
                 char leftChar = s.charAt(left);//char at left pointer
                 map.put(leftChar, map.get(leftChar) - 1);//decrement count of char at left
-                left++;
+                left++;//shrink window from left
             }
 
-            maxLen = Math.max(maxLen, right - left + 1);
+            maxLen = Math.max(maxLen, right - left + 1);//update maxLen if current window is larger
 
 
         }
