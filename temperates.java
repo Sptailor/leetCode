@@ -15,8 +15,8 @@ class Solution {
        Stack<Integer>stack=new Stack();//monotonic stack to store indices of temperatures
        int[] result = new int[temperatures.length];//result array to store days until warmer temperature
 
-       for(int i=0;i<temperatures.length;i++){
-        while(!stack.isEmpty()&& temperatures[i] > temperatures[stack.peek()] ){
+       for(int i=0;i<temperatures.length;i++){//iterate through temperatures
+        while(!stack.isEmpty()&& temperatures[i] > temperatures[stack.peek()] ){//found a warmer temperature
              int prevIndex = stack.pop();
              result[prevIndex] = i - prevIndex;
         }
