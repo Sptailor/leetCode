@@ -20,10 +20,10 @@ class Solution {
              int prevIndex = stack.pop();//index of previous cooler temperature
              result[prevIndex] = i - prevIndex;//calculate days until warmer temperature
         }
-        stack.push(i);
+        stack.push(i);//push current index onto stack
 
        }
-       return result;
+       return result;//return the result array
 
         
     }
