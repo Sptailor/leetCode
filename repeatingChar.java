@@ -37,7 +37,7 @@ class Solution {
 
 
         }
-     return maxLen;
+     return maxLen;//return the maximum length found
 
     }
 }
