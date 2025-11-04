@@ -21,9 +21,9 @@ class MinStack {
      private   Stack <Integer>minStack=new Stack<>();
     public MinStack() {
        
-       mainStack=new Stack();
-       minStack=new Stack();
-      
+       mainStack=new Stack();//stack to store all values
+       minStack=new Stack();//stack to store minimum values
+
     }
     
     public void push(int val) {
