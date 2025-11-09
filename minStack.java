@@ -27,9 +27,9 @@ class MinStack {
     }
     
     public void push(int val) {
-        mainStack.push(val);
-        if(minStack.isEmpty()||minStack.peek()>val){
-            minStack.push(val);
+        mainStack.push(val);//push value to main stack
+        if(minStack.isEmpty()||minStack.peek()>val){//if min stack is empty or top of min stack is greater than val
+            minStack.push(val);//push val to min stack
         }
     }
     
