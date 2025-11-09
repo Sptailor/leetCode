@@ -34,9 +34,9 @@ class MinStack {
     }
     
     public void pop() {
-        if(!mainStack.isEmpty()){
-            if(mainStack.pop()==minStack.peek()){
-                minStack.pop();
+        if(!mainStack.isEmpty()){//if main stack is not empty
+            if(mainStack.pop()==minStack.peek()){//if popped value is equal to top of min stack
+                minStack.pop();//pop from min stack
             }
         }
     }
