@@ -43,12 +43,12 @@ class MinStack {
     
     public int top() {
        
-      return  mainStack.peek();
+      return  mainStack.peek();//return top of main stack
     }
     
     public int getMin() {
-        
-            return minStack.peek();
+
+            return minStack.peek();//return top of min stack
          
     }
 }
