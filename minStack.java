@@ -17,8 +17,8 @@ import java.util.Stack;
 
 
 class MinStack {
-     private   Stack <Integer>mainStack=new Stack<>();
-     private   Stack <Integer>minStack=new Stack<>();
+     private   Stack <Integer>mainStack=new Stack<>();//stack to store all values
+     private   Stack <Integer>minStack=new Stack<>();//stack to store minimum values
     public MinStack() {
        
        mainStack=new Stack();//stack to store all values
