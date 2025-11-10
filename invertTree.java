@@ -24,8 +24,8 @@ class Solution {
 
 
         TreeNode temp=root.left;//swap left and right children
-        root.left=root.right;
-        root.right=temp;
+        root.left=root.right;//swap right subtree to left
+        root.right=temp;//swap left subtree to right
 
         invertTree(root.left);//swap left subtrees recursively
         invertTree(root.right);//swap right subtrees recursively
