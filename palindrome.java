@@ -32,6 +32,6 @@ class Solution {
             left++;// Move left pointer to the right
             right--;// Move right pointer to the left
 
-        } return true;
+        } return true;// Return true if all characters matched
     }
 }
