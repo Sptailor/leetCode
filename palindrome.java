@@ -17,12 +17,12 @@ class Solution {
 
              if(!Character.isLetterOrDigit(leftChar)){// Skip non-alphanumeric characters on the left
                 left++;// Move left pointer to the right
-                continue;
+                continue;// Continue to the next iteration
 
              }
              else if(!Character.isLetterOrDigit(rightChar)){// Skip non-alphanumeric characters on the right
                 right--;// Move right pointer to the left
-                continue;
+                continue;// Continue to the next iteration
 
              }
              if(Character.toLowerCase(leftChar)!=Character.toLowerCase(rightChar)){// Compare characters case-insensitively
