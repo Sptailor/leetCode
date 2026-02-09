@@ -18,10 +18,12 @@ public class longestSubstring {
         // Expand window by moving right pointer
         for(int right=left;right<s.length();right++)
         {
+            // Shrink window from left until no duplicate exists
             while(set.contains(s.charAt(right))){
                 set.remove(s.charAt(left));
                 left++;
             }
+            // Add current character to the window
             set.add(s.charAt(right));
 
             // Update max length if current window is larger
