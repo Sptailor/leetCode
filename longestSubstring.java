@@ -1,6 +1,12 @@
   import java.util.HashSet;
 
 public class longestSubstring {
+    /**
+     * LeetCode #3: Longest Substring Without Repeating Characters
+     * Uses sliding window technique to find the longest substring without duplicates.
+     * @param s the input string
+     * @return length of the longest substring without repeating characters
+     */
     public int lengthOfLongestSubstring(String s) {
         int left=0;
         HashSet<Character>set=new HashSet<>();
