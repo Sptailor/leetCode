@@ -8,8 +8,11 @@ public class longestSubstring {
      * @return length of the longest substring without repeating characters
      */
     public int lengthOfLongestSubstring(String s) {
+        // Left pointer of the sliding window
         int left=0;
+        // Set to track characters in current window
         HashSet<Character>set=new HashSet<>();
+        // Track the maximum length found
         int longest=0;
 
         for(int right=left;right<s.length();right++)
