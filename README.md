@@ -14,6 +14,7 @@ Solutions are written in Java and cover various topics including:
 - **Two Pointers**: Two Sum (sorted), Container With Most Water, Valid Palindrome
 - **Recursion**: Factorial (iterative & recursive)
 - **Greedy**: Best Time to Buy and Sell Stock, Majority Element
+- **Sliding Window**: Longest Substring Without Repeating Characters
 - **Miscellaneous**: Snake Case Converter, Rate Limiter
 
 ## Structure
