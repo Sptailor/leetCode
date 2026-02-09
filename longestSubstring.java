@@ -15,6 +15,7 @@ public class longestSubstring {
         // Track the maximum length found
         int longest=0;
 
+        // Expand window by moving right pointer
         for(int right=left;right<s.length();right++)
         {
             while(set.contains(s.charAt(right))){
@@ -23,6 +24,7 @@ public class longestSubstring {
             }
             set.add(s.charAt(right));
 
+            // Update max length if current window is larger
             longest=Math.max((right-left)+1,longest);
         }
         return longest;
