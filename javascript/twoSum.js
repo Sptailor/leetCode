@@ -12,6 +12,10 @@ var twoSum = function(nums, target) {
         if(map.has(compliment)){
             return [map.get(compliment),i]
         }
-
+        else
+        {
+            map.set(nums[i],i);
+        }
     }
+    return [];
 };
