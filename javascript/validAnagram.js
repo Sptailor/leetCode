@@ -14,4 +14,11 @@ const map={};
     map[char]=(map[char]||0)+1;
   }
 
+  for(let char of t){
+    if(!map[char]){
+        return false;
+    }
+    map[char]--;
+  }
+
 };
