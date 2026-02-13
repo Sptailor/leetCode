@@ -5,4 +5,8 @@
 var containsDuplicate = function(nums) {
     const set=new Set();
 
+    for( const num of nums){
+
+    }
+
 };
