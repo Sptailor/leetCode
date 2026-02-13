@@ -3,5 +3,6 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
+    const set=new Set();
 
 };
