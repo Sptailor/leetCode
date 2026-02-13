@@ -21,4 +21,6 @@ const map={};
     map[char]--;
   }
 
+  return true;
+
 };
