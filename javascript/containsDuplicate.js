@@ -9,7 +9,11 @@ var containsDuplicate = function(nums) {
         if(set.has(num)){
             return true;
         }
-
+        else{
+            set.add(num);
+        }
     }
+
+    return false;
 
 };
