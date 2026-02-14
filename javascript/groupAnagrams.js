@@ -9,7 +9,12 @@ var groupAnagrams = function(strs) {
 
     for(const str of strs){
         const sorted=str.split('').sort().join('');
-
+        if(!map.has(sorted)){
+            map.set(sorted,[str]);
+        }
+        else{
+            map.get(sorted).push(str);
+        }
     }
 
 };
