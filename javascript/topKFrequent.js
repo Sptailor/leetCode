@@ -13,4 +13,10 @@ var topKFrequent = function(nums, k) {
     }
     const buckets=Array(nums.length+1).fill().map(()=>[]);
 
+    for(const num in map){
+        const freq = map[num];
+        buckets[freq].push(Number(num));
+
+    }
+
 };
