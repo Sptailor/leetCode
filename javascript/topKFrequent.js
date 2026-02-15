@@ -5,4 +5,7 @@
  */
 var topKFrequent = function(nums, k) {
 
+    const map={};
+    const result=[];
+
 };
