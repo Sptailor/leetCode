@@ -21,4 +21,18 @@ for(let i=nums.length-1;i>0;i--){
     post[i]=total;
 }
 
+for(let i=0;i<nums.length;i++){
+    if(i === 0){
+        product[i]=post[i+1];
+    }
+    else if(i===nums.length-1){
+      product[i]=prefix[i-1];
+    }
+    else{
+    product[i]=prefix[i-1]*post[i+1];
+    }
+}
+
+return product;
+
 };
