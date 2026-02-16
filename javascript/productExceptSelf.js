@@ -15,5 +15,10 @@ for(let i=0;i<nums.length;i++){
     total=total*nums[i];
     prefix[i]=total;
 }
+total=1;
+for(let i=nums.length-1;i>0;i--){
+    total=total*nums[i];
+    post[i]=total;
+}
 
 };
