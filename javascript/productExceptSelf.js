@@ -11,4 +11,9 @@ const product=[];
 
 let total=1;
 
+for(let i=0;i<nums.length;i++){
+    total=total*nums[i];
+    prefix[i]=total;
+}
+
 };
