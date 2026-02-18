@@ -17,6 +17,13 @@ var longestConsecutive = function(nums) {
         if(!map.has(num-1)){
             start=num;
             length=1;
+            for(let i=num;map.has(i+1) ; i++){
+                length++;
+                if(length>max){
+                max=length;
+            }
+            }
+
 
         }
 
