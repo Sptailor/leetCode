@@ -28,5 +28,5 @@ var longestConsecutive = function(nums) {
         }
 
     }
-
+    return max;
 };
