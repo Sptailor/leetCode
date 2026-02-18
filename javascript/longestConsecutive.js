@@ -4,4 +4,6 @@
  */
 var longestConsecutive = function(nums) {
 
+    const map= new Set();
+
 };
