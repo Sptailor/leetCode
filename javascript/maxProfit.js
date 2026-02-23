@@ -17,4 +17,5 @@ var maxProfit = function(prices) {
             profit=tempDiff;
         }
     }
+    return profit;
 };
