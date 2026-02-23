@@ -10,5 +10,11 @@ var maxProfit = function(prices) {
 
     for(let right=1;right<prices.length;right++){
         let tempDiff=prices[right]-prices[left];
+       if(prices[right]<prices[left]){
+            left=right;
+        }
+        else if(profit<tempDiff){
+            profit=tempDiff;
+        }
     }
 };
