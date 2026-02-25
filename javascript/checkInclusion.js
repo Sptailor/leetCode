@@ -25,6 +25,12 @@ var checkInclusion = function(s1, s2) {
             let leftChar = s2[left];
 
             windowMap.set(leftChar, windowMap.get(leftChar) - 1);
+
+            if (windowMap.get(leftChar) === 0) {
+                windowMap.delete(leftChar);
+            }
+
+            left++;
         }
     }
 
