@@ -5,6 +5,8 @@
  */
 var checkInclusion = function(s1, s2) {
 
+    if (s1.length > s2.length) return false;
+
     const map1= new Map();
 
     for(let char of s1){
