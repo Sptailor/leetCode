@@ -11,4 +11,7 @@ var checkInclusion = function(s1, s2) {
 
         map1.set(char,(map1.get(char)||0)+1);
     }
+
+    let left=0;
+    let map2=map1;
 };
