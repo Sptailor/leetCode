@@ -38,3 +38,13 @@ var checkInclusion = function(s1, s2) {
 
     return false;
 };
+
+function mapsAreEqual(m1, m2) {
+    if (m1.size !== m2.size) return false;
+
+    for (let [key, val] of m1) {
+        if (m2.get(key) !== val) return false;
+    }
+
+    return true;
+}
