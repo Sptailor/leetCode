@@ -36,6 +36,5 @@ var checkInclusion = function(s1, s2) {
         if (mapsAreEqual(map1, windowMap)) return true;
     }
 
-
-
+    return false;
 };
