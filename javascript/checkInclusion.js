@@ -32,10 +32,9 @@ var checkInclusion = function(s1, s2) {
 
             left++;
         }
+
+        if (mapsAreEqual(map1, windowMap)) return true;
     }
-
-
-
 
 
 
