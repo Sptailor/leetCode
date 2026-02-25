@@ -6,4 +6,9 @@
 var checkInclusion = function(s1, s2) {
 
     const map1= new Map();
+
+    for(let char of s1){
+
+        map1.set(char,(map1.get(char)||0)+1);
+    }
 };
