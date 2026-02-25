@@ -14,4 +14,9 @@ var checkInclusion = function(s1, s2) {
 
     let left=0;
     let map2=map1;
+
+    for(let right=0;(right-left)<s1.length;right++){
+        let currChar=s2[right];
+
+    }
 };
