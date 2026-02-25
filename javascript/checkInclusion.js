@@ -19,6 +19,7 @@ var checkInclusion = function(s1, s2) {
     for (let right = 0; right < s2.length; right++) {
 
         let currChar = s2[right];
+        windowMap.set(currChar, (windowMap.get(currChar) || 0) + 1);
     }
 
 
