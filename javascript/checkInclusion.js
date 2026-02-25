@@ -5,4 +5,5 @@
  */
 var checkInclusion = function(s1, s2) {
 
+    const map1= new Map();
 };
