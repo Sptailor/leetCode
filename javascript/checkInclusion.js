@@ -7,7 +7,7 @@ var checkInclusion = function(s1, s2) {
 
     if (s1.length > s2.length) return false;
 
-    const map1 = new Map();
+    const s1Map = new Map();
 
     for (let char of s1) {
         map1.set(char, (map1.get(char) || 0) + 1);
@@ -33,7 +33,7 @@ var checkInclusion = function(s1, s2) {
             left++;
         }
 
-        if (mapsAreEqual(map1, windowMap)) return true;
+        if (mapsAreEqual(s1Map, windowMap)) return true;
     }
 
     return false;
