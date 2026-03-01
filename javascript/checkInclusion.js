@@ -21,7 +21,7 @@ var checkInclusion = function(s1, s2) {
         let rightChar = s2[right];
         windowMap.set(rightChar, (windowMap.get(rightChar) || 0) + 1);
 
-        if ((right - left + 1) > s1.length) {
+        if ((right - left) + 1 > s1.length) {
             let leftChar = s2[left];
 
             windowMap.set(leftChar, windowMap.get(leftChar) - 1);
